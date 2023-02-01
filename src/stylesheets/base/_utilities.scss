@@ -1,0 +1,55 @@
+// margin setting
+@for $i from 1 through 10 {
+	.mt-#{$i} {
+		margin-top: 1rem * $i;
+	}
+
+	.mb-#{$i} {
+		margin-bottom: 1rem * $i;
+	}
+
+	.mr-#{$i} {
+		margin-right: 1rem * $i;
+	}
+
+	.ml-#{$i} {
+		margin-left: 1rem * $i;
+	}
+}
+
+// padding setting
+@for $i from 1 through 10 {
+	.pt-#{$i} {
+		padding-top: 1rem * $i;
+	}
+
+	.pb-#{$i} {
+		padding-bottom: 1rem * $i;
+	}
+
+	.pr-#{$i} {
+		padding-right: 1rem * $i;
+	}
+
+	.pl-#{$i} {
+		padding-left: 1rem * $i;
+	}
+}
+
+.w-container {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.f-container {
+	width: 100%;
+}
+
+.title {
+	font-size: clamp(2rem, 0.7143rem + 3.0476vw, 3rem);
+	font-weight: 600;
+}
+
+.text {
+	font-size: 1.6rem;
+}

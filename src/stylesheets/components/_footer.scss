@@ -1,0 +1,73 @@
+@use '../base/base';
+@use '../base/variables' as var;
+
+.footer {
+	background-color: var.$color-black;
+	color: var.$color-white;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2rem 10rem;
+
+		& small {
+			font-size: 1.4rem;
+
+			& span {
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__list-group {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__list-link {
+		color: inherit;
+	}
+}
+
+// パソコン画面用の表示
+@media screen and (min-width:769px) {
+	.footer__list-group {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+// 戻るボタン
+.go-to-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 5rem;
+	right: 2rem;
+	z-index: 1000;
+	background-color: #818181;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	cursor: pointer;
+	/*デフォルトで非表示にする*/
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+
+	span {
+		color: var.$color-white;
+		font-weight: 600;
+		font-size: 1.8rem;
+	}
+}
+
+/*このクラスが付与されると表示する*/
+.active {
+	opacity: .5;
+	visibility: visible;
+	transition: all 0.3s;
+}

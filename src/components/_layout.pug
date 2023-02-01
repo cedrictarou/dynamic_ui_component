@@ -1,0 +1,20 @@
+doctype html
+
+head
+	meta(charset='UTF-8')
+	link(rel='icon' type='image/svg+xml' href='/vite.svg')
+	link(rel='stylesheet' href='./stylesheets/reset.css')
+	block style
+	meta(name='viewport' content='width=device-width, initial-scale=1.0')
+	block title
+
+body
+	//- header
+	include ./_header.pug
+
+	main 
+		block content
+	//- footer
+	include ./_footer.pug
+
+	script(type='module' src='./javascripts/main.js')

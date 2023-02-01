@@ -1,0 +1,16 @@
+@use '../base/base';
+@use '../base/utilities';
+@use '../base/variables' as var;
+
+@mixin mainTitle {
+	color: var.$color-white;
+	font-weight: 600;
+	font-size: clamp(2.5rem, -0.7143rem + 7.619vw, 5rem);
+	text-shadow: var.$text-shadow;
+}
+
+@mixin subTitle {
+	color: var.$color-white;
+	font-size: clamp(1.8rem, 0.9rem + 2.1333vw, 2.5rem);
+	text-shadow: var.$text-shadow;
+}
