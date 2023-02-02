@@ -1,15 +1,11 @@
 extends  /components/_layout.pug
 
 block title
-	- const title = "Service";
+	- const title = "事業内容";
 	title TECH Company | #{title}
 
 block content
-	section.eyecatch.mb-10
-		.eyecatch__bg
-			img.eyecatch__img(src="/images/mv.png")
-		.eyecatch__text
-			h1.eyecatch__title 事業内容
+	include /components/_eyecatch.pug
 
 	section.service 
 		.service__card-group.w-container.pb-10

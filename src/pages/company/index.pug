@@ -1,0 +1,22 @@
+extends  /components/_layout.pug
+
+block title
+	- const title = "会社概要";
+	title TECH Company | #{title}
+
+block content
+	include /components/_eyecatch.pug
+
+		- const items = [{head:'会社名',body:'株式会社TECH'},{head:'代表者',body:'山田 太郎'},{head:'所在地',body:'	東京都渋谷区神宮前'},{head:'設立',body:'	2019/07/17'},{head:'従業員数',body:'100人'},{head:'資本金',body:'1000万円'}]
+
+	section.company.mb-10
+		.company__cotnainer.w-container
+			table.company__table
+				tbody
+					each item, index in items 
+						tr 
+							th=item.head
+							td=item.body
+
+	//- contact
+	include /components/_contact.pug

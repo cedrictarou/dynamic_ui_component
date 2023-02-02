@@ -8,34 +8,11 @@
 @use '../components/button';
 @use '../components/modal';
 @use '../components/contact';
+@use '../components/eyecatch';
 
 
-.eyecatch {
-	width: 100%;
-	position: relative;
-
-	&__img {
-		object-fit: cover;
-		height: 250px;
-	}
-
-	&__text {
-		position: absolute;
-		display: flex;
-		justify-content: center;
-		top: 50%;
-		right: 50%;
-		transform: translate(50%, -50%);
-	}
-
-	&__title {
-		color: var.$color-white;
-	}
-}
 
 .service {
-	&__card-group {}
-
 	&__card {
 		border-bottom: 0.1rem solid var.$color-black;
 		padding-bottom: 2rem;

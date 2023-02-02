@@ -21,8 +21,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         top: resolve(__dirname, "./src/pages/index.pug"),
-        about: resolve(__dirname, "./src/pages/about.pug"),
         service: resolve(__dirname, "./src/pages/service/index.pug"),
+        blog: resolve(__dirname, "./src/pages/blog/index.pug"),
+        company: resolve(__dirname, "./src/pages/company/index.pug"),
       },
       output: {
         chunkFileNames: "javascripts/[name].js",

@@ -1,0 +1,51 @@
+@use'../reset.css';
+@use '../base/base';
+@use '../base/utilities';
+@use '../base/variables' as var;
+@use '../base/mixin';
+@use '../components/header';
+@use '../components/footer';
+@use '../components/button';
+@use '../components/modal';
+@use '../components/contact';
+@use '../components/eyecatch';
+
+
+
+.blog {
+	&__card-top {
+		margin-bottom: 1rem;
+	}
+
+	&__card-top {
+		margin-bottom: 1rem;
+	}
+
+	&__card-body {
+		margin-bottom: 1rem;
+	}
+
+	&__title {
+		font-size: 1.8rem;
+		font-weight: 600;
+	}
+
+	&__date {
+		font-size: 1.6rem;
+		font-weight: 200;
+	}
+}
+
+@media screen and (min-width:769px) {
+	.blog {
+		&__card-group {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem 2rem;
+		}
+
+		&__card-body {
+			margin-bottom: 0;
+		}
+	}
+}

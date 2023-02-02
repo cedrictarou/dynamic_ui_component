@@ -1,0 +1,64 @@
+extends  /components/_layout.pug
+
+block title
+	- const title = "社員ブログ";
+	title TECH Company | #{title}
+
+block content
+	include /components/_eyecatch.pug
+
+	section.blog.mb-10 
+		.blog__container.w-container 
+			.blog__card-group
+				article.blog__card 
+					.blog__card-top
+						a(href="#") 
+							img.blog__card-img(src="/images/blog.png")
+					.blog__card-body 
+						p.blog__date 2019/07/17
+						a(href="#") 
+							h2.blog__title 会社を創業した理由
+				article.blog__card 
+					.blog__card-top
+						a(href="#") 
+							img.blog__card-img(src="/images/blog.png")
+					.blog__card-body 
+						p.blog__date 2019/11/11
+						a(href="#") 
+							h2.blog__title ITエンジニアを育成する最強メソッド
+				article.blog__card 
+					.blog__card-top
+						a(href="#") 
+							img.blog__card-img(src="/images/blog.png")
+					.blog__card-body 
+						p.blog__date 2020/08/01
+						a(href="#") 
+							h2.blog__title コーチングによるモチベーション向上理論
+				article.blog__card 
+					.blog__card-top
+						a(href="#") 
+							img.blog__card-img(src="/images/blog.png")
+					.blog__card-body 
+						p.blog__date 2020/09/10
+						a(href="#") 
+							h2.blog__title プログラミング言語習得論
+				article.blog__card 
+					.blog__card-top
+						a(href="#") 
+							img.blog__card-img(src="/images/blog.png")
+					.blog__card-body 
+						p.blog__date 2020/12/01
+						a(href="#") 
+							h2.blog__title エンジニア採用における注意点
+				article.blog__card 
+					.blog__card-top
+						a(href="#") 
+							img.blog__card-img(src="/images/blog.png")
+					.blog__card-body 
+						p.blog__date 2021/01/01
+						a(href="#") 
+							h2.blog__title 今年の抱負
+
+
+	//- contact
+	include /components/_contact.pug
