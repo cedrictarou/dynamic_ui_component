@@ -1,0 +1,42 @@
+extends  /components/_layout.pug
+
+block title
+	- const title = "Service";
+	title TECH Company | #{title}
+
+block content
+	section.eyecatch.mb-10
+		.eyecatch__bg
+			img.eyecatch__img(src="/images/mv.png")
+		.eyecatch__text
+			h1.eyecatch__title 事業内容
+
+	section.service 
+		.service__card-group.w-container.pb-10
+			article.service__card
+				.service__img-wrapper
+					img.service__img(src="/images/service1.png" alt="") 
+				.service__content 
+					h2.title IT人材育成事業
+					p.text これまでに培った教育手法を生かして、短期間で即戦力のIT人材を育成します。
+			article.service__card
+				.service__img-wrapper
+					img.service__img(src="/images/service2.png" alt="") 
+				.service__content 
+					h2.title コーチング事業
+					p.text 目標達成を最短で実現するために、プロのコーチによるマンツーマンのサポートを実施します。
+			article.service__card
+				.service__img-wrapper
+					img.service__img(src="/images/service3.png" alt="") 
+				.service__content 
+					h2.title ITコンサル事業
+					p.text 経営戦略にIT戦略を策定し、システム開発の提案やシステムの最適化を通じて、企業の経営をサポートします。
+			article.service__card
+				.service__img-wrapper
+					img.service__img(src="/images/service4.png" alt="") 
+				.service__content 
+					h2.title デジタルトランスフォーメーション事業
+					p.text 人々の生活をよりよいものに変革するために様々なデジタル技術を活用し、革新的なソリューションやサービスを生み出します。
+
+	//- contact
+	include /components/_contact.pug

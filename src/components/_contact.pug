@@ -1,0 +1,30 @@
+section.contact
+	.w-container.pt-8.pb-8
+		h2.contact__title.title.mb-2 お問い合わせ
+		p.contact__desc.text お仕事のご依頼や採用に関してはお問い合わせにて承っております。
+		.btn__box
+			button.btn.btn--contact#openBtn お問い合わせ
+
+	//- modal
+	#modal.modal
+		.modal__content
+			.modal__content-inner
+				h2 お問い合わせ
+				form.form(action="#")
+
+					label.form__label(for="compnay") 会社名
+					input.form__input(type="text" id="company")
+
+					label.form__label(for="name") お名前
+					input.form__input(type="text" id="name" required)
+
+					label.form__label(for="email") メールアドレス
+					input.form__input(type="email" id="email" required)
+
+					label.form__label(for="comment") お問い合わせ内容
+					textarea.form__textarea(id="comment" required) 
+
+					.btn__box
+						button.btn--black(type="submit") お申し込み
+
+				button#closeBtn.btn--close(type='button') &times;

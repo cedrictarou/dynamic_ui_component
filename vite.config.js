@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve, join } from "path";
 import vitePluginPugStatic from "@macropygia/vite-plugin-pug-static";
 
-const root = resolve(__dirname, "src");
+const root = resolve(__dirname, "src/pages");
 const dist = resolve(__dirname, "dist");
 const publicDir = resolve(__dirname, "public");
 
@@ -20,9 +20,9 @@ export default defineConfig({
     outDir: dist,
     rollupOptions: {
       input: {
-        top: resolve(__dirname, "./src/index.pug"),
-        about: resolve(__dirname, "./src/pages/about/index.pug"),
-        // blog: resolve(__dirname, "./src/page/blog/index.pug"),
+        top: resolve(__dirname, "./src/pages/index.pug"),
+        about: resolve(__dirname, "./src/pages/about.pug"),
+        service: resolve(__dirname, "./src/pages/service/index.pug"),
       },
       output: {
         chunkFileNames: "javascripts/[name].js",

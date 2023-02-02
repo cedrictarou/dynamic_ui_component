@@ -1,3 +1,7 @@
+export const test = () => {
+  console.log("test");
+};
+
 export const openModal = () => {
   const openBtn = document.querySelector("#openBtn");
   const modal = document.querySelector("#modal");
